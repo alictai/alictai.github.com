@@ -50,6 +50,7 @@ a:visited
 #navigation
 {
 	background-color: black;
+	font-size: 10px;
 	color: white;
 	overflow: auto;
 	padding-top: 5px;
