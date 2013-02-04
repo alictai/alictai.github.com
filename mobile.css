@@ -37,8 +37,9 @@ a:link
 
 #aliphoto
 {
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	width: 100%;
+	text-align: center;
 }
 
 #navigation
