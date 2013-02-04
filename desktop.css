@@ -28,6 +28,11 @@ ul
 	font-size: 14px;
 }
 
+ol
+{
+	font-size: 14px;
+}
+
 a:link
 {
 	color: white;
@@ -61,6 +66,7 @@ a:active
 .date_location
 {
 	font-style: italic;
+	font-size: 14px;
 	color: grey;
 }
 
