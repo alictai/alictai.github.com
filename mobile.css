@@ -37,7 +37,9 @@ a:link
 
 #aliphoto
 {
-	float: center;
+	position: fixed;
+	left: 50%;
+	margin-left: -100px;
 }
 
 #navigation
