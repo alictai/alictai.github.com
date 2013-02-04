@@ -21,7 +21,13 @@ h3
 a:link
 {
 	color: white;
-	text-decoration: none;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: white;
+	text-decoration: underline;
 }
 
 .strong
