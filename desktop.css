@@ -13,31 +13,61 @@ h1
 	color: white; 
 }
 
+h3
+{
+	text-decoration: underline;
+}
+
+p
+{
+	font-size: 14px;
+}
+
+ul
+{
+	font-size: 14px;
+}
+
 a:link
 {
 	color: white;
+	text-decoration: none;
 }
 
 a:visited
 {
 	color: white;
+	text-decoration: none;
 }
 
 
 a:hover
 {
 	color: red;
+	text-decoration: underline;
 }
 
 a:active
 {
 	color: white;
+	text-decoration: none;
+}
+
+.strong
+{
+	font-weight: bold;
+}
+
+.date_location
+{
+	font-style: italic;
+	color: grey;
 }
 
 #aliphoto
 {
 	width: 200px;
-	height: 300px;
+	height: 450px;
 	padding-left: 20px;
 	float: left;
 }
@@ -57,7 +87,8 @@ a:active
 #maincontent
 {
 	background-color: white;
-	height: 300px;
+	height: 450px;
 	overflow: scroll;
 	padding-left: 20px;
+	padding-right: 20px;
 }
