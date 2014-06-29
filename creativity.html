@@ -4,10 +4,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Alison Tai Resume</title>
+	<title>Photos & Design</title>
 	<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css" />
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="jquery_code.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="galleria/galleria-1.3.3.min.js"></script>
 </head>
 
 <body>
@@ -16,18 +18,24 @@
           <li><a href="index.html"><h3>Alison C. Tai</h3></a></li>
           <li><a href="about.html" id="About">About</a></li>
           <li><a href="projects.html" id="Projects">Projects</a></li>
-          <li><a href="resume.pdf" id="Resume">Resume</a></li>
           <li><a href="creativity.html" id="Creativity">Design</a></li>
+          <li><a href="resume.pdf" id="Resume">Resume</a></li>
           <li><a href="http://twitter.com/koalinite" id="Twitter">Twitter</a></li>
           <li><a href="http://github.com/alictai" id="GitHub">GitHub</a></li>
-        <li><a href="http://www.linkedin.com/pub/alison-tai/45/46b/483" id="LinkedIn">
+          <li><a href="http://www.linkedin.com/pub/alison-tai/45/46b/483" id="LinkedIn">
           LinkedIn</a></li>
       </ul>
 </div>
-<div id="about" class="load loadtwo">
-  <p>Content is under construction</p>
-  <!--Write jquery to make opacity of backgrond fade out so text is visible? Fancy!-->
+<!--div id="about" class="load loadtwo"-->
+<div class="galleria">
+    <img src="gallery/graphic/eurydice.jpg">
+    <img src="gallery/graphic/coffeehouse.jpg">
+    <img src="gallery/graphic/jumbos.jpg">
 </div>
+<script>
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+</script>
 </body>
 
 </html>
