@@ -54,30 +54,86 @@ h3
 /* Links */
 a:link 
 { 
+  color: #B6FF00; 
+  outline: none; 
+  text-decoration: none;
+}
+
+a:visited 
+{ 
+  color: #BA01FF; 
+  outline: none;
+  text-decoration: none; 
+}
+
+a:hover
+{
+  color: #BA01FF; 
+  outline: none;
+  text-decoration: none;
+}
+
+a:active 
+{
+  color: #666; 
+  outline: none;
+  text-decoration: none;
+}
+
+#nav a:link 
+{ 
 	color: #666; 
 	outline: none; 
 	text-decoration: none;
 }
 
-a:visited 
+#nav a:visited 
 { 
 	color: #666; 
 	outline: none;
 	text-decoration: none; 
 }
 
-a:hover
+#nav a:hover
 {
 	color: #333; 
 	outline: none;
 	text-decoration: none;
 }
 
-a:active 
+#nav a:active 
 {
 	color: #666; 
 	outline: none;
 	text-decoration: none;
+}
+
+#index_nav a:link 
+{ 
+  color: #666; 
+  outline: none; 
+  text-decoration: none;
+}
+
+#index_nav a:visited 
+{ 
+  color: #666; 
+  outline: none;
+  text-decoration: none; 
+}
+
+#index_nav a:hover
+{
+  color: #333; 
+  outline: none;
+  text-decoration: none;
+}
+
+#index_nav a:active 
+{
+  color: #666; 
+  outline: none;
+  text-decoration: none;
 }
 
 /* Index */
@@ -145,7 +201,7 @@ a:active
 #about
 {
   float: left;
-  /*width: 670px;*/
+  width: 75%;
 }
 
 .galleria
@@ -153,4 +209,15 @@ a:active
   padding: 20px;
   width: 400px;
   height: 600px;
+}
+
+.bio
+{
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #fff; 
+  text-transform: none;
 }
