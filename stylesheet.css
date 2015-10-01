@@ -190,7 +190,8 @@ a:active
 {
   padding: 28px 30px 100px 30px;
   float: right;
-  width: 100px;
+  width: 10%;
+  height: 600px;
   border-left: 1px solid #00ffff;
   font-size: 11px;
   text-transform: uppercase;
@@ -207,7 +208,7 @@ a:active
 .galleria
 {
   padding: 20px;
-  width: 400px;
+  width: 75%;
   height: 600px;
 }
 
