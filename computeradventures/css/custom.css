@@ -9,7 +9,7 @@ h3,
 h4, 
 h5, 
 h6 {
-	color: #dd845a;
+	color: #228DFF;
 	}
 	
 .feature {
@@ -74,10 +74,43 @@ h6 {
 .item-3 {
 	background: url('../images/parties.jpg');
 	}
+
+.item-4,
+.item-9 {
+	background: #228DFF;
+	}
+
+.item-5,
+.item-10 {
+	background: #FA6900;
+}
+
+.item-6,
+.item-11 {
+	background:#F4EAD5;
+}
+
+.item-7,
+.item-12 {
+	background:#5EBA38;
+}
+
+.item-8 {
+	background: #412002;
+}
 		
 .item-1,
 .item-2,
-.item-3 {
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10,
+.item-11,
+.item-12 {
 	background-size: cover;
 	background-position: 50% 50%;
 	}
@@ -146,12 +179,12 @@ Override Bootstrap Classes
 
 /* Links */
 a {
-  color: orange;
+  color: #228DFF;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: darkorange;
+  color: #2C00B4;
   text-decoration: underline;
 }
 
@@ -160,7 +193,7 @@ a:focus {
   background-color: #fff;
 }
 .navbar-default .navbar-brand {
-  color: #dd845a;
+  color: #228DFF;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -171,26 +204,26 @@ a:focus {
 /* Primary Buttons */
 .btn-primary {
   color: #fff;
-  background-color: orange;
-  border-color: orange;
+  background-color: #228DFF;
+  border-color: #228DFF;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #2C00B4;
+  border-color: #2C00B4;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #2C00B4;
+  border-color: #2C00B4;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #2C00B4;
+  border-color: #2C00B4;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -202,8 +235,8 @@ a:focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: darkorange;
-  border-color: darkorange;
+  background-color: #2C00B4;
+  border-color: #2C00B4;
 }
 
 .btn-primary.disabled,
