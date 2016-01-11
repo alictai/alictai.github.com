@@ -189,6 +189,11 @@ a:focus {
 }
 
 /* Navbar */
+.nav-logo {
+	width: 125%;
+	height: 100%;
+}
+
 .navbar-default {
   background-color: #fff;
 }
