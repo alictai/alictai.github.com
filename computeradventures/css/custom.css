@@ -277,3 +277,7 @@ fieldset[disabled] .btn-primary.active {
 	padding-top:1px;
 	padding-bottom:1px;
 }
+
+.newclass {
+	color:red;
+}

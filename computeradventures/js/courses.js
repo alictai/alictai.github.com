@@ -12,10 +12,18 @@ function renderClasses() {
 		
 		coursestring += "<div class=\"col-sm-6 col-md-3 row-number-"+row_num+"\">";
 		coursestring += "<div class=\"thumbnail featured-product\">";
-		coursestring += "<img src=\"images/enrichment.jpg\" alt=\"\">";
+		if (catalog[i].Img){
+			coursestring += "<img src=\"./images/"+catalog[i].Img+"\" alt=\"\">";
+		} else {
+			coursestring += "<img src=\"./images/Logo-2.jpg\" alt=\"\">";
+		}
 		coursestring += "<div class=\"caption\">";
-		coursestring += "<h3>"+catalog[i].Title+"</h3>";
-		//+"   <font color=\"red\">"+catalog[i].Status+"</font>
+		if (catalog[i].Status!="") {
+			coursestring += 
+				"<h3><span class=\"newclass\"><span class=\"glyphicon glyphicon-star\"></span>"
+				+ catalog[i].Status +": </span>";
+		}
+		coursestring += catalog[i].Title + "</h3>";
         coursestring += "<h5>"+catalog[i].Age+" | "+catalog[i].Time+"</h5>";
         coursestring += "<p>"+catalog[i].Description+"</p>";
         coursestring += "<button class=\"btn btn-primary\" type=\"button\">Register Now!</button>";
@@ -25,7 +33,6 @@ function renderClasses() {
 
 		if(loc == 3) {
 			var forWrapping = ".row-number-"+row_num;
-			console.log("wrapping " + forWrapping);
 			$(forWrapping).wrapAll("<div class='row' />");
 		}
 

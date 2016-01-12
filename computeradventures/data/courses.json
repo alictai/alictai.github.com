@@ -6,7 +6,8 @@ catalog=[{
 	"Prereq": "None",
 	"Description": "You will make your own 3D creations. Your ideas will pop out of your head into your hands! Student will learn how to use a professional software to sculpt, texture, arrange and render their own 3D projects. This class will be more focus on the 3D modeling than the 3D printing. We will show students how to order online the 3D objects in their projects. ",
 	"Notes": "The software used in this class has more functionalities and is more robust that the simple 3D modeling software in the ",
-	"Status": "NEW"
+	"Status": "NEW",
+	"Img":"intro3dprint.png"
 }, {
 	"Title": "3D Modeling and Printing",
 	"Category": "3D Printing and Modeling",
@@ -15,7 +16,8 @@ catalog=[{
 	"Prereq": "None",
 	"Description": "Welcome to 3D printing - the technology that will change the way we live! You will learn about different 3D printing methods, materials, and software. The instructor will guide the students in creating 3D models using simple design software that are free, accessible and easy to learn. At the completion of the course, every student will have at least one 3D object from their projects to take home. We will show students how to how to order any of the objects from their portfolio online. ",
 	"Notes": "The modeling software will be available for free. Students' projects, resource files, and software will be available for download from our website.",
-	"Status": "NEW"
+	"Status": "NEW",
+	"Img":"3dmodelprint.png"
 }, {
 	"Title": "Legomation",
 	"Category": "Animation",
@@ -24,7 +26,8 @@ catalog=[{
 	"Prereq": "None",
 	"Description": "LEGO® and animation …. Legomation! Using LEGO® minifigs and bricks,  webcam and computer software, students produce stop-motion animated movies. Instructor will guide the students to storyboard, animate and edit the movie. This is a great class to take with friends.  You can take it as many times as you like.",
 	"Notes": "",
-	"Status": "NEW"
+	"Status": "NEW",
+	"Img":"legomation.png"
 }, {
 	"Title": "Brickfilms (previously Make-a-Movie)",
 	"Category": "Animation",
