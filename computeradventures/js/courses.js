@@ -22,6 +22,8 @@ function renderClasses() {
 			coursestring += 
 				"<h3><span class=\"newclass\"><span class=\"glyphicon glyphicon-star\"></span>"
 				+ catalog[i].Status +": </span>";
+		} else {
+			coursestring += "<h3>";
 		}
 		coursestring += catalog[i].Title + "</h3>";
         coursestring += "<h5>"+catalog[i].Age+" | "+catalog[i].Time+"</h5>";
