@@ -9,7 +9,7 @@ h3,
 h4, 
 h5, 
 h6 {
-	color: #228DFF;
+	color: #1034a6;
 	}
 	
 .feature {
@@ -77,7 +77,7 @@ h6 {
 
 .item-4,
 .item-9 {
-	background: #228DFF;
+	background: #1034a6;
 	}
 
 .item-5,
@@ -123,6 +123,11 @@ h6 {
 .featured-product h3 {
 	color: #dd845a;
 	font-size: 18px;
+	}
+
+.featured-product h5 {
+	color: gray;
+	font-size: 14px;
 	}
 
 .featured-product .price {
@@ -179,7 +184,7 @@ Override Bootstrap Classes
 
 /* Links */
 a {
-  color: #228DFF;
+  color: #1034a6;
   text-decoration: none;
 }
 a:hover,
@@ -198,7 +203,7 @@ a:focus {
   background-color: #fff;
 }
 .navbar-default .navbar-brand {
-  color: #228DFF;
+  color: #1034a6;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -209,8 +214,8 @@ a:focus {
 /* Primary Buttons */
 .btn-primary {
   color: #fff;
-  background-color: #228DFF;
-  border-color: #228DFF;
+  background-color: #1034a6;
+  border-color: #1034a6;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -264,4 +269,11 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
   background-color: sandybrown;
   border-color: sandybrown;
+}
+
+.filter {
+	background-color: sandybrown;
+  	border-color: sandybrown;
+	padding-top:1px;
+	padding-bottom:1px;
 }
