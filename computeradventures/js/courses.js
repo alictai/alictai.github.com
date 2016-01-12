@@ -1,14 +1,15 @@
-var active_filters=[];
-var showing_filter=[];
-var btnlookup=	{"All": "All",
-						"3D-Print-Model":"3D Printing and Modeling",
-						"Animation":"Animation",
-						"App-Dev":"App Development",
-						"Digi-Graphics":"Digital Graphics",
-						"Games":"Game Design",
-						"Minecraft":"Minecraft",
-						"Program":"Programming",
-						"Robots":"Robotics"};
+var active_filters = [];
+var showing_filter = [];
+var btnlookup =	{"All": "All",
+				"3D-Print-Model":"3D Printing and Modeling",
+				"Animation":"Animation",
+				"App-Dev":"App Development",
+				"Digi-Graphics":"Digital Graphics",
+				"Games":"Game Design",
+				"Minecraft":"Minecraft",
+				"Program":"Programming",
+				"Robots":"Robotics"};
+var max_categories = 8;
 
 $(document).ready(function(){
 	renderClasses();
@@ -23,19 +24,28 @@ $('.course-filter').click(function(){
 		if ($("#All").hasClass("active")){
 			$("#All").removeClass("active");
 		}
+
 		active_filters.push(btnlookup[category])
 		$(this).addClass("active");
-		console.log(active_filters);
+		// console.log(active_filters);
+
+		if (active_filters.length == max_categories) {
+			$("#All").addClass("active");
+		}
 	} else {
 		if (category != "All") {
 			$("#All").removeClass("active");
 			var index = active_filters.indexOf(btnlookup[category])
 			active_filters.splice(index,1);
 			$(this).removeClass("active");
-			console.log(active_filters);
+			// console.log(active_filters);
 		}
+
 		if (active_filters.length == 0) {
 			$("#All").addClass("active");
+		}
+		else if (active_filters.length < max_categories) {
+			$("#All").removeClass("active");
 		}
 	}
 	$(".course-listing").remove();
@@ -43,7 +53,7 @@ $('.course-filter').click(function(){
 });
 
 function renderClasses() {
-	console.log(active_filters);
+	// console.log(active_filters);
 	var num_courses = -1
 	for (var i = 0; i < catalog.length; i++) {
 		if (active_filters.length == 0 || active_filters.indexOf(catalog[i].Category) != -1) {
@@ -69,7 +79,7 @@ function renderClasses() {
 			coursestring += catalog[i].Title + "</h3>";
 	        coursestring += "<h5>"+catalog[i].Age+" | "+catalog[i].Time+"</h5>";
 	        coursestring += "<p>"+catalog[i].Description+"</p>";
-	        coursestring += "<button class=\"btn btn-primary\" type=\"button\">Register Now!</button>";
+	        coursestring += "<a class=\"btn btn-primary\" href=\"http://register.asapconnected.com/default.aspx?org=2346\" target=\"_blank\">Register Now!</a>";
 			coursestring += "</div></div></div>";
 
 			$("#catalog").append(coursestring);
