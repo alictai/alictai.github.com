@@ -7,7 +7,9 @@ $(document).ready(function(){
 		}
 	});
 	$(".nav-link").removeClass("active")
-	$($(".nav").attr('id')).addClass("active");
+	curr_page = $(".nav").attr('id')
+	console.log("current page is "+curr_page);
+	$(curr_page).addClass("active");
 	$("footer").load("includes/footer.html", function(response, status, xhr) {
 		if(status == "success") {
 			console.log("footer loaded");
