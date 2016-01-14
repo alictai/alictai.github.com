@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$(".nav").load("includes/nav.html", function(response, status, xhr) {
 		if(status == "success") {
 			console.log("navigation loaded");
-			curr_page = "#" + $(".nav").attr('id')
+			curr_page = "#nav-" + $(".nav").attr('id')
 			console.log("current page is "+curr_page);
 			$(curr_page).addClass("active");
 		} else {
