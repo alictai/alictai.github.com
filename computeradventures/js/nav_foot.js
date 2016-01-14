@@ -5,7 +5,7 @@ $(document).ready(function(){
     	dataType: 'TEXT',
     	success: function(result){
      	    $("#nav").append(result);
-     	    console.log();
+     	    console.log(result);
      	    $("#nav").append("<p>hello</p>");
         	console.log("success");
         	//console.log(result);
