@@ -4,7 +4,7 @@ $(document).ready(function(){
     	type: 'GET',
     	dataType: 'TEXT',
     	success: function(result){
-     	    $("#nav").append(result);
+     	    $("#nav").innerHTML()=result;
      	    console.log(result);
      	    $("#nav").append("<p>hello</p>");
         	console.log("success");
