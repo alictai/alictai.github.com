@@ -6,7 +6,7 @@ $(document).ready(function(){
     	success: function(result){
      	    $("#nav").html(result);
         	console.log("success");
-        	console.log(result);
+        	//console.log(result);
     	},
     	error: function (req, text, error) {
     		alert(error);
