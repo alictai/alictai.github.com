@@ -1,10 +1,11 @@
-var active_filters = [];
-var showing_filter = [];
+var active_filter = "All";
 var btnlookup =	{"All": "All",
-				"3D-Print-Model":"3D Printing and Modeling",
+				"3D-Model":"3D Modeling",
+				"3D-Print":"3D Printing",
 				"Animation":"Animation",
 				"App-Dev":"App Development",
 				"Digi-Graphics":"Digital Graphics",
+				"Electronics":"Electronics",
 				"Games":"Game Design",
 				"Minecraft":"Minecraft",
 				"Program":"Programming",
@@ -20,43 +21,50 @@ $('.course-filter').click(function(){
 	// console.log(category);
 	// console.log(btnlookup[category]);
 
-	if (!($(this).hasClass("active"))){
-		if ($("#All").hasClass("active")){
-			$("#All").removeClass("active");
-		}
-
-		active_filters.push(btnlookup[category])
+	//Clicked class is not the current filter
+	if(!($(this).hasClass("active"))){
+		active_filter = btnlookup[category];
+		$(".course-filter").removeClass("active");
 		$(this).addClass("active");
-		// console.log(active_filters);
-
-		if (active_filters.length == max_categories) {
-			$("#All").addClass("active");
-		}
-	} else {
-		if (category != "All") {
-			$("#All").removeClass("active");
-			var index = active_filters.indexOf(btnlookup[category])
-			active_filters.splice(index,1);
-			$(this).removeClass("active");
-			// console.log(active_filters);
-		}
-
-		if (active_filters.length == 0) {
-			$("#All").addClass("active");
-		}
-		else if (active_filters.length < max_categories) {
-			$("#All").removeClass("active");
-		}
 	}
+
+	// if (!($(this).hasClass("active"))){
+	// 	if ($("#All").hasClass("active")){
+	// 		$("#All").removeClass("active");
+	// 	}
+
+	// 	active_filters.push(btnlookup[category])
+	// 	$(this).addClass("active");
+	// 	// console.log(active_filters);
+
+	// 	if (active_filters.length == max_categories) {
+	// 		$("#All").addClass("active");
+	// 	}
+	// } else {
+	// 	if (category != "All") {
+	// 		$("#All").removeClass("active");
+	// 		var index = active_filters.indexOf(btnlookup[category])
+	// 		active_filters.splice(index,1);
+	// 		$(this).removeClass("active");
+	// 		// console.log(active_filters);
+	// 	}
+
+	// 	if (active_filters.length == 0) {
+	// 		$("#All").addClass("active");
+	// 	}
+	// 	else if (active_filters.length < max_categories) {
+	// 		$("#All").removeClass("active");
+	// 	}
+	// }
 	$(".course-listing").remove();
 	renderClasses();
 });
 
 function renderClasses() {
-	// console.log(active_filters);
+	console.log(active_filter);
 	var num_courses = -1
 	for (var i = 0; i < catalog.length; i++) {
-		if (active_filters.length == 0 || active_filters.indexOf(catalog[i].Category) != -1) {
+		if (active_filter == "All" || active_filter == catalog[i].Course_Categories) {
 			num_courses += 1;
 			var row_num = Math.floor(num_courses/4);
 			var coursestring = "";
@@ -69,16 +77,17 @@ function renderClasses() {
 				coursestring += "<img src=\"./images/Logo-2.jpg\" alt=\"\">";
 			}
 			coursestring += "<div class=\"caption\">";
-			if (catalog[i].Status!="") {
+			if (catalog[i].Course_Suffix!="") {
 				coursestring += 
 					"<h3><span class=\"newclass\"><span class=\"glyphicon glyphicon-star\"></span>"
-					+ catalog[i].Status +": </span>";
+					+ catalog[i].Course_Suffix +": </span>";
 			} else {
 				coursestring += "<h3>";
 			}
-			coursestring += catalog[i].Title + "</h3>";
-	        coursestring += "<h5>"+catalog[i].Age+" | "+catalog[i].Time+"</h5>";
-	        coursestring += "<p>"+catalog[i].Description+"</p>";
+			coursestring += catalog[i].Course_Name + "</h3>";
+	        coursestring += "<h5>"+catalog[i].Age+" | "+catalog[i].Course_Length+"</h5>";
+	        coursestring += "<p>Prerequisite: "+catalog[i].Prerequisite+"</p>";
+	        coursestring += "<p>"+catalog[i].Course_Description+"</p>";
 	        coursestring += "<a class=\"btn btn-primary\" href=\"http://register.asapconnected.com/default.aspx?org=2346\" target=\"_blank\">Register Now!</a>";
 			coursestring += "</div></div></div>";
 
