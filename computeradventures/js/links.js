@@ -8,6 +8,9 @@ $(document).ready(function(){
 	// summer camp registration form pdf
 	$(".reg-form").attr("href", "http://www.computeradventures.com/SuCampForm-2015-d.pdf");
 
+	// summer camp 2015 brochure
+	$(".camp-broch").attr("href", "Brochure-WebDownload.pdf");
+
 	// party registration email
 	$(".reg-party").attr("href","mailto:westchestercomputeradventures.com?subject=Computer%20Adventures%20Party%20Registration");
 
