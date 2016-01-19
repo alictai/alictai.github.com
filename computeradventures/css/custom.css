@@ -3,13 +3,16 @@ body {
 	color: #959595;
 	}
 	
-h1, 
+h1 {
+	color: #1034a6
+}
+
 h2, 
 h3, 
 h4, 
 h5, 
 h6 {
-	color: #1034a6;
+	color: #dd845a;
 	}
 	
 .feature {
@@ -280,4 +283,13 @@ fieldset[disabled] .btn-primary.active {
 
 .newclass {
 	color:red;
+}
+
+.location {
+	width:60%;
+}
+
+.reg-details p {
+	color: gray;
+	font-size: 14px;
 }
