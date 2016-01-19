@@ -10,4 +10,7 @@ $(document).ready(function(){
 
 	// party registration email
 	$(".reg-party").attr("href","mailto:westchestercomputeradventures.com?subject=Computer%20Adventures%20Party%20Registration");
+
+	// enrichment class registration pdf
+	$(".reg-enrich").attr("href","http://www.computeradventures.com/ECForm-F2013-d.pdf");
 });
