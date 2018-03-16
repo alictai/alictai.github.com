@@ -4,17 +4,18 @@
 - name: About
   path: about.html
   section_id: about
-- name: Services
-  path: services.html
-  section_id: services
-- name: Portfolio
-  path: portfolioitems/portfolio.html
-  section_id: portfolio
   children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio item
-      path: portfolioitems/portfolio-item.html
+    - name: Resume
+      path: about.html#resume   
+#- name: Services
+#  path: services.html
+#  section_id: services
+- name: Portfolio
+  path: portfolio.html
+  section_id: portfolio
+#  children:
+#    - name: Portfolio item
+#      path: portfolioitems/portfolio-item.html
 - name: Contact
   path: contact.html
   section_id: contact
