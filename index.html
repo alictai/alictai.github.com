@@ -4,16 +4,15 @@ section_id: home
 slides:
   - bg: images/@stock/slide-2.jpg
     title:
-      text: Wrap is a creative theme for many purposes
-      animation: bottom-to-top
+      text: 
       class: large-8 medium-11
     buttons:
       animation: bottom-to-top
       class: medium-12
-      items:
+      <!--items:
         - text: Purchase Now
           url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-          class: boxed
+          class: boxed-->
   - bg: images/@stock/slide-3.jpg
     title:
       text: It is simple but powerful
@@ -46,39 +45,28 @@ slides:
       - text: "&nbsp;Fully responsive"
         animation: bottom-to-top
 boxes:
-  - icon_class: fa fa-trophy
-    title: Design
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-compass
-    title: Art direction
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-star-half-empty
-    title: Branding
-    text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-image
-    title: Photography
+    title: Designer
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
   - icon_class: fa fa-dot-circle-o
-    title: Marketing
+    title: Researcher
+    text:
+      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
+  - icon_class: fa fa-compass
+    title: Program Manager
     text:
       Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
 milestones:
   - from: 0
-    to: 69
-    title: Projects Completed
+    to: 10
+    title: Features completed
   - from: 0
-    to: 726
-    title: Cups of coffee offered
+    to: 10
+    title: Studies completed
   - from: 0
-    to: 59
-    title: Happy clients
-  - from: 0
-    to: 21
-    title: Articles Published
+    to: 100000
+    title: Happy users
 
 testimonials:
   - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
@@ -92,7 +80,7 @@ testimonials:
     position: Designer at Huglab
 
 clients:
-  - images/@stock/client-1.png
+  - images/@stock/client-1.jpg
   - images/@stock/client-2.png
   - images/@stock/client-3.png
   - images/@stock/client-4.png
@@ -103,12 +91,13 @@ clients:
 
 <div class='advanced mod modDefaultSlider'>
   <div class='sequence' data-autostop='on' data-timeout='0'>
-    <a class='sequence-prev' href='javascript:void(0);'>
+    <!-- Arrows for paging -->
+    <!--a class='sequence-prev' href='javascript:void(0);'>
       <span></span>
     </a>
     <a class='sequence-next' href='javascript:void(0);'>
       <span></span>
-    </a>
+    </a-->
     <ul class='sequence-pagination'>
       {% for slide in page.slides %}
         {% if forloop.index == 1 %}
@@ -163,7 +152,7 @@ clients:
     </ul>
   </div>
 </div>
-<div class='full'>
+<!--div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
       <h4 style='color: #999'>Our history</h4>
@@ -173,7 +162,7 @@ clients:
     </div>
   </div>
   <div class='three spacing'></div>
-</div>
+</div-->
 <div class='full' style='background: #f5f5f5'>
   <div class='row'>
     <div class='large-12 columns'>
@@ -247,8 +236,6 @@ clients:
 </div>
 
 
-
-
 <div class='full parallax' style='background: #f5f5f5'>
   <div class='row'>
     {% for milestone in page.milestones %}
@@ -263,7 +250,7 @@ clients:
   </div>
   <div class='four spacing'></div>
 </div>
-<div class='full no-padding' style='background: #444; color: #fff'>
+<!--div class='full no-padding' style='background: #444; color: #fff'>
   <div class='two spacing'></div>
   <div class='mod modCallToAction'>
     <div class='row'>
@@ -276,7 +263,7 @@ clients:
     </div>
   </div>
   <div class='spacing'></div>
-</div>
+</div-->
 <div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
