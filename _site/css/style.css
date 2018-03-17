@@ -13,6 +13,11 @@
   font-weight: bold;
 }
 
+/* custom */
+.name {
+    width: 30%;
+}
+
 /*some basic settings */
 a {
   color: #F9CE06;
