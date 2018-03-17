@@ -4,78 +4,62 @@ section_id: home
 
 slides:
     - 
-        bg: images/@stock/slide-2.jpg
+        bg: images/@stock/slide-1.jpg
         title:
-            text: 
-            class: large-8 medium-11
-        buttons:
-        animation: bottom-to-top
-        class: medium-12
+            text: Hello world.</br>I'm Ali. &#9786;
+            animation: bottom-to-top
+            class: medium-12
     - 
-        bg: images/@stock/slide-3.jpg
+        bg: images/@stock/slide-3.png
         title:
-            text: It is simple but powerful
+            text: I currently work at Microsoft.
             animation: bottom-to-top
-            class: large-7 large-offset-5 medium-9 medium-offset-3
+            class: medium-12
         buttons:
             animation: bottom-to-top
-            class: large-7 large-offset-5 medium-9 medium-offset-3
+            class: large-12
             items:
-                - 
-                    text: Purchase Now
-                    url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+                -
+                    text: Visual Studio Team Services
+                    url: https://www.visualstudio.com/team-services/
                     class: boxed
     - 
-        bg: images/@stock/slide-6.jpg
+        bg: images/@stock/slide-2.jpg
+        title:
+            text: Let's make this fast-moving, technology-driven, beautiful world easier to interact with.
+            animation: bottom-to-top
+            class: medium-12
         buttons:
-            animation: bottom-to-top slow
+            animation: bottom-to-top
             class: large-12
-        items:
-            - 
-                text: View Features
-                url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-                class: boxed
-            - 
-                text: Purchase Now
-                url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-        infos:
-            - 
-                text: "&nbsp;Creative and responsive design"
-                animation: bottom-to-top
-            - 
-                text: "&nbsp;Many helpful shortcodes"
-                animation: bottom-to-top
-            - 
-                text: "&nbsp;Simple but powerful theme options"
-                animation: bottom-to-top
-            - 
-                text: "&nbsp;Fully responsive"
-                animation: bottom-to-top
+            items:
+                -
+                    text: Contact Me
+                    url: contact.html
+                    class: boxed
+
 
 boxes:
   - icon_class: fa fa-compass
-    title: Program Manager
+    title: Product Owner
     text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-image
+  - icon_class: fa fa-pencil
     title: Designer
     text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
-  - icon_class: fa fa-dot-circle-o
+  - icon_class: fa fa-search
     title: Researcher
     text:
-      Placeat vel itaque perspiciatis sed repellat qui nihil recusandae doloremque aperiam necessitatibus aspernatur. illum ad adipisci saepe dolores cumque fugit nihil minus. temporibus corporis eos dolore reprehenderit ipsa at neque ab ut porro perferendis ex nihilillum ad adipisci saepe dolores cumque fugit nihil minus.
 
 milestones:
   - from: 0
     to: 10
-    title: Features completed
+    title: Features shipped
   - from: 0
-    to: 10
+    to: 8
     title: Studies completed
   - from: 0
-    to: 100000
-    title: Happy users
+    to: 65
+    title: User interviews
   - from: 0
     to: 10
     title: Lorem ipsum 
@@ -92,24 +76,23 @@ testimonials:
     position: Designer at Huglab
 
 clients:
-  - images/@stock/client-1.jpg
+  - images/@stock/client-1.png
   - images/@stock/client-2.png
   - images/@stock/client-3.png
   - images/@stock/client-4.png
   - images/@stock/client-5.png
-  - images/@stock/client-6.png
 
 ---
 
 <div class='advanced mod modDefaultSlider'>
   <div class='sequence' data-autostop='on' data-timeout='0'>
     <!-- Arrows for paging -->
-    <!--a class='sequence-prev' href='javascript:void(0);'>
+    <a class='sequence-prev' href='javascript:void(0);'>
       <span></span>
     </a>
     <a class='sequence-next' href='javascript:void(0);'>
       <span></span>
-    </a-->
+    </a>
     <ul class='sequence-pagination'>
       {% for slide in page.slides %}
         {% if forloop.index == 1 %}
@@ -197,7 +180,7 @@ clients:
 
 
 
-<div class='full'>
+<!--div class='full'>
   <div class='row'>
     <div class='medium-6 columns'>
       <img class="fadeinleft" width="500" height="340" alt="" src="images/@stock/macbook.png" />
@@ -245,23 +228,23 @@ clients:
     </div>
   </div>
   <div class='four spacing'></div>
-</div>
+</div-->
 
 
-<div class='full parallax' style='background: #f5f5f5'>
+<!--div class='full parallax'>
   <div class='row'>
     {% for milestone in page.milestones %}
       <div class='medium-3 large-3 columns right-border left-border'>
         <div class='mod modMilestone no-icon'>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
-          <span>{{milestone.title}}</span>
-          <div class='spacing'></div>
+            <p><strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'></strong></p>
+            <span>{{milestone.title}}</span>
+            <div class='spacing'></div>
         </div>
       </div>
     {% endfor %}
   </div>
   <div class='three spacing'></div>
-</div>
+</div-->
 <!--div class='full no-padding' style='background: #444; color: #fff'>
   <div class='two spacing'></div>
   <div class='mod modCallToAction'>
@@ -276,7 +259,7 @@ clients:
   </div>
   <div class='spacing'></div>
 </div-->
-<div class='full'>
+<!--div class='full'>
   <div class='row'>
     <div class='large-12 columns'>
       <p class='centered-text'>
@@ -305,7 +288,7 @@ clients:
     </div>
   </div>
   <div class='four spacing'></div>
-</div>
+</div-->
 <div class='full parallax' style='background-image: url(../images/@stock/customers-bg.jpg); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>

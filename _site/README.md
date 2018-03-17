@@ -12,4 +12,5 @@ jekyll serve
 ```
 
 # To Do List
-* Remove background from and edit size of "client" jpgs/pngs
+* Fix blurry VSTS client image
+* Add instagram and behance links?
