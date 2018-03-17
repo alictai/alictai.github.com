@@ -12,5 +12,6 @@ jekyll serve
 ```
 
 # To Do List
+* Bundle jquery into website so that the scripts don't fail to load
 * Fix blurry VSTS client image
 * Add instagram and behance links?
