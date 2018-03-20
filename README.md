@@ -12,6 +12,9 @@ jekyll serve
 ```
 
 # To Do List
-* Bundle jquery into website so that the scripts don't fail to load
 * Fix blurry VSTS client image
-* Add instagram and behance links?
+* Add instagram link?
+* Build e-resume
+* Set up blog (uncomment in _data/nav.yml)
+* Write up portfolio (uncomment in _data/nav.yml)
+* Add testimonial quotes to about.html
