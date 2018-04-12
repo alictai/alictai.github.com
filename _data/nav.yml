@@ -1,12 +1,9 @@
 - name: Home
   path: index.html
   section_id: home
-- name: About
+- name: Resume
   path: about.html
   section_id: about
-  children:
-    - name: Resume
-      path: about.html#resume   
 # TO DO
 #- name: Portfolio
 #  path: portfolio.html

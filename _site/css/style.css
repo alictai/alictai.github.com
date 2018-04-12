@@ -18,6 +18,14 @@
     width: 30%;
 }
 
+.resume-cat{
+    color: #F9CE06;
+}
+
+.resume-date{
+    color: #999;
+}
+
 /*some basic settings */
 a {
   color: #F9CE06;
