@@ -18,3 +18,4 @@ jekyll serve
 * Set up blog (uncomment in _data/nav.yml)
 * Write up portfolio (uncomment in _data/nav.yml)
 * Add testimonial quotes to about.html
+* Set up GitHub Issues
