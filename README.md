@@ -1,3 +1,4 @@
+[![Board Status](https://alidemos.visualstudio.com/f2649196-9f4c-4d43-8db2-892de3caf209/066ecdef-687f-46c2-8f9b-d09286aa6d59/_apis/work/boardbadge/b9fbf4c1-8562-46c3-9177-0726c841c8b5)](https://alidemos.visualstudio.com/f2649196-9f4c-4d43-8db2-892de3caf209/_boards/board/t/066ecdef-687f-46c2-8f9b-d09286aa6d59/Microsoft.RequirementCategory)
 # Hello World
 Hi, my name is Ali Tai and you've stumbled across the repo for my personal website. 
 
